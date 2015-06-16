@@ -1,6 +1,6 @@
 {
   "name": "jsxlate-loader",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Webpack loader for jsxlate",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "webpack"
   ],
   "peerDependencies": {
-    "jsxlate": "^0.1.5"
+    "jsxlate": "^0.1.6"
   },
   "author": "Eric O'Connell <eric.oconnell@idealist.org>",
   "license": "BSD"
