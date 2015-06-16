@@ -1,0 +1,19 @@
+{
+  "name": "jsxlate-loader",
+  "version": "0.1.5",
+  "description": "Webpack loader for jsxlate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jsxlate",
+    "react",
+    "i18n",
+    "internationalization",
+    "l10n",
+    "webpack"
+  ],
+  "author": "Eric O'Connell <eric.oconnell@idealist.org>",
+  "license": "BSD"
+}
