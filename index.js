@@ -1,5 +1,5 @@
-var jsxlate = require('./lib/jsxlate');
+var jsxlate = require('jsxlate');
 
 module.exports = function(src) {
-    return jsxlate.transformMessageNodes(src);
+    return jsxlate.translator.transformMessageNodes(src);
 };
