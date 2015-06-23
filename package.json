@@ -15,7 +15,7 @@
     "webpack"
   ],
   "peerDependencies": {
-    "jsxlate": "^0.1.6"
+    "jsxlate": ">=0.1.6"
   },
   "author": "Eric O'Connell <eric.oconnell@idealist.org>",
   "license": "BSD"
