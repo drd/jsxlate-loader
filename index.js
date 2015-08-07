@@ -1,9 +1,25 @@
+var cache = require('./cache');
 var jsxlate = require('jsxlate');
 
 module.exports = function(src) {
     this.cacheable();
+    var cacheKey = this.resource;
+    var resourceMtime = cache.mtime(this.resource);
+
     try {
-        return jsxlate.translator.transformMessageNodes(src);
+        var result;
+        var cached = cache.cache[cacheKey];
+        if (cached && cached.mtime === resourceMtime) {
+            result = cached;
+        } else {
+            result = {
+                mtime: resourceMtime,
+                transformed: jsxlate.translator.transformMessageNodes(src)
+            };
+            cache.cache[cacheKey] = result;
+            cache.save()
+        }
+        return result.transformed;
     } catch(e) {
         var message = "Error transforming " + this.resource;
         console.error(message);
