@@ -1,5 +1,5 @@
-var cache = require('./cache');
 var jsxlate = require('jsxlate');
+var cache = jsxlate.cache;
 
 module.exports = function(src) {
     this.cacheable();
